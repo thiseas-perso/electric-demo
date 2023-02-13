@@ -24,7 +24,7 @@ const StudioImage = ({
   return (
     <Image
       alt=""
-      src={`https://cdn.imagin.studio/getImage?customer=frfreelance-thiseas&make=${maker}&modelFamily=${imgModel}&width=${width}&margins=0&zoomType=${zoomType}`}
+      src={`https://cdn.imagin.studio/getImage?customer=${process.env.NEXT_IMAGES_TOKEN}&make=${maker}&modelFamily=${imgModel}&width=${width}&margins=0&zoomType=${zoomType}`}
       width={width}
       height={height}
       className={className}
